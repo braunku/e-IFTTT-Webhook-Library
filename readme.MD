@@ -1,4 +1,4 @@
-# e-IFTTT-Webhook-Library
+# e!COCKPIT IFTTT Webhook Library
 
 ## This is a library for e!COCKPIT to send webhook events to IFTTT
 
@@ -6,11 +6,15 @@ This compiled library once installed into e!COCKPIT using the library manager, w
 
 ## Install
 
-Use the PFC web based management to install the cURL ipk.
-![IPK Installation](http://i66.tinypic.com/wuqcms.jpg)
+Use the PFC web based management to install the cURL ipk.  You can test this by cut/pasting your IFTTT example cURL command, with a -k added at the end to disable SSL.  If you want to pass the three values, then modify the command this way.
+
+	curl -X POST -H "Content-Type: application/json" -d "{\"value1\":\"Hello \",\"value2\":\"World \",\"value3\":\"!\"}" https://maker.ifttt.com/trigger/{event}/with/key/{your key here} -k
+
+![IPK Installation](http://i68.tinypic.com/2dabzue.jpg)
+![IFTTT Key](http://i68.tinypic.com/vxedh.jpg)
 
 Use the e!COCKPIT Library Manager to install the compiled IFTTT library.
-![IFTTT Library Installation](http://i66.tinypic.com/wuqcms.jpg)
+![IFTTT Library Installation](http://i65.tinypic.com/2cq02vl.png)
 
 
 ## How to use
@@ -21,9 +25,8 @@ Use the e!COCKPIT Library Manager to install the compiled IFTTT library.
 
 3. Copy your IFTTT Webhook key.  This can be found by logging into your IFTTT acount, then look in IFTTT>Services>Webhooks>Documentation. 
 
-See the example flow:
-
-![Flow Example](http://i66.tinypic.com/wuqcms.jpg)
+example usage:
+![Flow Example](http://i64.tinypic.com/2lwlmhx.png)
 
 ## Authors
 
