@@ -32,6 +32,9 @@ Use the e!COCKPIT Library Manager to install the compiled IFTTT library.
 example usage:
 ![Flow Example](http://i64.tinypic.com/2lwlmhx.png)
 
+YouTube Tutorial:
+https://youtu.be/cTGchqEa3AU 
+
 ## Authors
 
 [Kurt Braun][3]
